@@ -1,0 +1,32 @@
+.app {
+  display: grid;
+  grid-template-columns: 36% 64%;
+  padding: 20px;
+  gap: 20px;
+  width: 1280px;
+  max-width: 1280px;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.brand {
+  position: relative;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.main {
+  background-color: var(--shape-body);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding-block: 5rem;
+  
+  & h1{
+    width: 35rem;
+    color: var(--text-heading);
+  }
+}

@@ -1,0 +1,45 @@
+.brand {
+  border-radius: 0.75rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(33, 37, 38, 0.8) 0%,
+    rgba(33, 37, 38, 0.65) 20%,
+    rgba(33, 37, 38, 0.3) 41%,
+    rgba(33, 37, 38, 0.1) 100%
+  );
+  
+  & .imagem {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.75rem;
+  }
+
+  & .titulos {
+    margin: 2rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 1rem;
+    & img {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    & .texto {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      & h1 {
+        font-family: var(--leckerli-one);
+        color: var(--pink);
+      }
+      & p {
+        color: var(--text-heading);
+      }
+    }
+  }
+}

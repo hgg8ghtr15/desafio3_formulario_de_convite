@@ -1,0 +1,110 @@
+form {
+  width: 35rem;
+  gap: 3rem;
+
+  /* --input-placeholder
+  --input-stroke
+  --input-base */
+
+  & fieldset {
+    border: none;
+    gap: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+
+    & legend {
+      display: flex;
+      align-items: center;
+      color: var(--text-heading);
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    & img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  & input {
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    font-family: var(--open-sans);
+  }
+
+  & textarea {
+    resize: none;
+    width: 100%;
+    height: 8.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    font-family: var(--open-sans);
+  }
+
+  & input[type="datetime-local"]::-webkit-calendar-picker-indicator{
+    display: none;
+    -webkit-appearance: none;
+  }
+
+  & .convite {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: auto 8.5rem;
+  border-radius: 0.5rem;
+  gap: 0.25rem;
+  border: 1px solid var(--input-stroke);
+  font-family: var(--open-sans);
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.radio-inner {
+  border: 1px solid var(--input-stroke);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  padding: 0.79rem;
+  gap: 0.5rem;
+
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & svg {
+    fill: var(--input-placeholder);
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--shape-button);
+  }
+
+  &:has(:checked) {
+    border: 1px solid var(--brand-light);
+    color: var(--brand-light);
+    & svg {
+      fill: var(--brand-light);
+    }
+  }
+}
