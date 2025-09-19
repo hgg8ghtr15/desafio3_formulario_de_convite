@@ -62,16 +62,5 @@ body {
   color: var(--text-body);
 }
 
-.wrapeer{
-  display: flex;
-  flex-direction: column;
-  gap: .75rem;
-}
-
-.wrapeer-2-coll{
-  display: grid;
-  grid-template-columns: auto 16.8rem;
-  gap: 1rem;
-}
 
 
