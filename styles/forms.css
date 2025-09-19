@@ -1,5 +1,7 @@
 form {
   width: 35rem;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
 
   & fieldset {
@@ -38,4 +40,10 @@ form {
   display: grid;
   grid-template-columns: auto 16.8rem;
   gap: 1rem;
+}
+
+.wrapper-radio-color{
+  display: flex;
+  justify-content: space-evenly;
+  
 }

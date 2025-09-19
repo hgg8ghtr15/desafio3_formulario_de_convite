@@ -25,3 +25,30 @@ textarea {
   color: var(--input-placeholder);
   font-family: var(--open-sans);
 }
+/* 
+input[type="color"] {
+  all: unset;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0px;
+  border-radius: 50%;
+  border: none;
+  outline: 4px solid var(--shape-button);
+  background-color: transparent;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none; 
+  border-radius: 50%; 
+} */
