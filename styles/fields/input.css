@@ -1,3 +1,8 @@
+label {
+  font-size: .75rem;
+  font-family: var(--open-sans);
+}
+
 input {
   width: 100%;
   height: 3rem;
@@ -7,6 +12,7 @@ input {
   background-color: var(--input-base);
   color: var(--input-placeholder);
   font-family: var(--open-sans);
+  font-size: 1rem;
 }
 
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
@@ -25,6 +31,73 @@ textarea {
   color: var(--input-placeholder);
   font-family: var(--open-sans);
 }
+
+.upload-container {
+  /* font-family: var(--open-sans); */
+  background-color: var(--shape-body);
+  color: var(--text-body);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23rem;
+
+  & .input-area {
+    display: flex;
+    align-items: center;
+  }
+
+  & .botao-upload {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem; 
+
+    background-color: var(--shape-button);  
+    color: var(--text-heading); 
+
+    padding: 10px 16px;
+    border-radius: .5rem;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  & .botao-upload:hover {
+    background-color: #444c56;
+  }
+
+  /* & .botao-upload svg {
+    stroke: #adbac7;
+  } */
+
+  & .nome-arquivo {
+    margin-left: 16px;
+    font-size: 14px;
+    font-family: var(--open-sans);
+    color: var(--input-placeholder);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* input[type="file"] {
+  border: none;
+  background-color: var(--shape-body);
+  
+  &::file-selector-button {
+    all: unset;
+    width: 7.43rem;
+    height: 2.5rem;
+    border-radius: .5rem ;
+    background-color: var(--shape-button);
+    color: var(--input-placeholder);
+    cursor: pointer;
+    text-align: center;
+  }
+} */
+
 /* 
 input[type="color"] {
   all: unset;

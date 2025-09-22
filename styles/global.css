@@ -4,16 +4,7 @@
   --brand-mid: #3487cf;
   --brand-dark: #1d6fb6;
 
-  /* Accent Colors */
-  --purple: #b259ff;
-  --fuschia: #ff59f9;
-  --pink: #ff598b;
-  --orange: #ff8b59;
-  --yellow: #ffcd59;
-  --lime: #e1ff59;
-  --green: #59ff91;
-  --cyan: #59fff9;
-  --navy: #6a59ff;
+  /* ... outras cores ... */
 
   /* Feedback */
   --danger: #ff5959;
@@ -33,19 +24,20 @@
   --text-body: #c8cdd0;
   --text-heading: #f9f9f9;
 
-  /* Fonts */
+  /* Fonts (com nomes consistentes) */
   --leckerli-one: "Leckerli One", "cursive";
   --baloo-2: "Baloo 2", sans-serif;
   --open-sans: "Open Sans", sans-serif;
 
-  --logo: 400 2.5rem/1.25rem var(--Leckerli-One);
+  /* Typography Scale (com line-height corrigido e explícito) */
+  --logo: 400 2.5rem/1.25 var(--leckerli-one); 
 
-  --heading-md: 700 1.75rem var(--baloo-2);
-  --heading-sm: 700 1.125rem var(--baloo-2);
+  --heading-md: 700 1.75rem/1.3 var(--baloo-2);
+  --heading-sm: 700 1.125rem/1.3 var(--baloo-2);
 
-  --body-md: 400 1rem var(--open-sans);
-  --body-sm: 400 0.875rem var(--open-sans);
-  --body-xs: 400 0.75rem var(--open-sans);
+  --body-md: 400 1rem/1.5 var(--open-sans);
+  --body-sm: 400 0.875rem/1.5 var(--open-sans);
+  --body-xs: 400 0.75rem/1.5 var(--open-sans)
 }
 
 * {

@@ -9,7 +9,7 @@
   font-size: 0.875rem;
 }
 
-.radio-inner {
+/* .radio-inner {
   border: 1px solid var(--input-stroke);
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@
     position: absolute;
     inset: 0;
   }
-}
+} */
 .radio-inner {
   border: 1px solid var(--input-stroke);
   display: flex;
@@ -88,7 +88,6 @@
     /* stroke: var(--shape-button); */
     /* stroke: red; */
     stroke-width: 1;
-
   }
 
   &:hover,
@@ -101,10 +100,54 @@
   }
 
   &:has(:checked) {
-     & svg {
+    & svg {
       & .primari {
         fill: var(--brand-light);
       }
     }
+  }
+}
+
+.radio-image-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.radio-inrer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 8.375rem;
+  height: 6.437rem;
+  background-color: var(--shape-button);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+  img {
+    width: 7.875rem;
+    height: 4rem;
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--shape-hover);
+    /* border: 1px solid var(--brand-light); */
+  }
+
+  &:has(:checked) {
+    border: 1px solid var(--brand-light);
+    /* color: var(--brand-light); */
   }
 }

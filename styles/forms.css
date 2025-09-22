@@ -17,6 +17,8 @@ form {
       gap: 0.75rem;
       justify-content: center;
       margin-bottom: 1.5rem;
+      font-size: 1.25rem;
+      font-family: var(--baloo-2);
     }
 
     & img {
@@ -29,21 +31,40 @@ form {
     display: flex;
     flex-direction: column;
   }
+
+  & .personlizacao {
+    width: 35rem;
+    height: 35.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
 }
-.wrapeer{
+.wrapeer {
   display: flex;
   flex-direction: column;
-  gap: .75rem;
+  gap: 0.75rem;
+}
+.wrapeer-rows {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.wrapeer-2-coll{
+.wrapeer-2-coll {
   display: grid;
   grid-template-columns: auto 16.8rem;
   gap: 1rem;
 }
 
-.wrapper-radio-color{
+.wrapeer-2-coll-2 {
+  display: grid;
+  grid-template-columns: auto 23rem;
+  height: 4.97rem;
+  gap: 1rem;
+}
+
+.wrapper-radio-color {
   display: flex;
   justify-content: space-evenly;
-  
 }
