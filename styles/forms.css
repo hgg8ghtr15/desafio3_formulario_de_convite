@@ -34,11 +34,25 @@ form {
 
   & .personlizacao {
     width: 35rem;
-    height: 35.625rem;
+    /* height: 35.625rem; */
     display: flex;
     flex-direction: column;
     gap: 1.75rem;
   }
+
+  & .contato{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  & .checkbox-termos{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+  }
+
 }
 .wrapeer {
   display: flex;

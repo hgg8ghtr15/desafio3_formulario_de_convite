@@ -72,3 +72,60 @@
     font-family: var(--open-sans);
   }
 }
+
+/* Container do grupo de checkboxes */
+.checkbox-group {
+  display: flex;
+  flex-direction: column; /* Organiza os itens em coluna */
+  gap: 1rem; /* Espaçamento entre os checkboxes */
+  border: none; /* Remove a borda padrão do fieldset */
+  padding-top: 40px;
+  margin: 0;
+  border-top: 1px solid var(--input-placeholder);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--open-sans);
+}
+
+/* Estilo para cada linha/label do checkbox */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-body);
+  cursor: pointer;
+
+  /* 1. ESCONDENDO O CHECKBOX ORIGINAL DE FORMA ACESSÍVEL */
+  & input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* 2. CRIANDO O NOSSO CHECKBOX CUSTOMIZADO (A CAIXINHA) */
+  & .checkmark {
+    display: block;
+    height: 20px;
+    width: 20px;
+    min-width: 20px; /* Garante que não encolha */
+    background-color: transparent;
+    border: 2px solid var(--input-stroke); /* Borda cinza padrão */
+    border-radius: 4px;
+    transition: all 0.2s ease; /* Transição suave */
+  }
+
+  /* 3. MUDANDO O ESTILO QUANDO O CHECKBOX ESTÁ MARCADO */
+  & input[type="checkbox"]:checked + .checkmark {
+    background-color: var(--brand-light);
+    border-color: var(--brand-light);
+    background-image: url(../../assets/icones/check_cheche.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+}

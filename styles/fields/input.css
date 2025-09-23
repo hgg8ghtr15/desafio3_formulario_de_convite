@@ -1,5 +1,5 @@
 label {
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-family: var(--open-sans);
 }
 
@@ -13,6 +13,40 @@ input {
   color: var(--input-placeholder);
   font-family: var(--open-sans);
   font-size: 1rem;
+
+  &:focus{
+    /* border-color: var(--brand-light); */
+    outline: 3px solid var(--brand-light);
+  }
+  
+  &:required {
+    outline: 2px solid var(--danger);
+    /* border-color: var(--danger); */
+  }
+  
+  &:required:invalid {
+    outline: 2px solid var(--danger);
+    /* border-color: var(--danger); */
+  }
+  
+  &:required:valid {
+    outline: 2px solid #06ffd6;
+    /* border-color: var(--brand-light); */
+  }
+
+  &[required] + .error {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--danger);
+    stroke: var(--danger);
+    margin-top: 0.25rem;
+  }
+
+  &:valid + .error {
+    display: none;
+  }
 }
 
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
@@ -50,13 +84,13 @@ textarea {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: .5rem; 
+    gap: 0.5rem;
 
-    background-color: var(--shape-button);  
-    color: var(--text-heading); 
+    background-color: var(--shape-button);
+    color: var(--text-heading);
 
     padding: 10px 16px;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 
     cursor: pointer;
     transition: background-color 0.2s ease;
